@@ -1,0 +1,6 @@
+import requests as rq
+url1 ='http://172.27.8.31:14579/ScrMvRESTTest/trn'
+url2 ='http://113.164.120.61:14579/ScrMvRESTTest/trn'
+json = {"udid":"d0199a77a1a81ca7","plan_id":"M202207140006","trn_ord_no":""}
+r = rq.post(url2,json)
+print(r.text)
